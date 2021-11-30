@@ -57,13 +57,15 @@ h1 {
 .pointers {
   width: 100%;
   height: 100%;
-  padding-left: 49%;
-  padding-top: 5%;
+  padding-left: 50%; /*???*/
+  padding-top: 1%;
   margin-top: -100%;
 }
 .p {
   transform-origin: left; /* 'centro de massa' do elemento à esquerda*/
-  transform: rotate(0deg); /*para a posição inicial*/
+  transform: rotate(
+    0deg
+  ); /*para a posição inicial. Graus alteram com JS (blabla.style.transform)?? */
   position: absolute;
 }
 
@@ -82,6 +84,7 @@ h1 {
   height: 8px;
   background-color: rgb(107, 107, 107);
 }
+/*Ponto no meio do relogio, onde une o transform-origin:left */
 .middle {
   width: 15px;
   height: 15px;
