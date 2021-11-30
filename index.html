@@ -9,29 +9,54 @@
   </head>
   <body>
     <h1>Right on time!</h1>
-    <div class="dials">
-      <div class="hours-indicator"></div>
-      <div class="minutes-indicator"></div>
-      <div class="seconds-indicator"></div>
-    </div>
     <div class="analog">
+      <!-- Analog tem 2 childs: dashes e pointers-->
+      <div class="dashes">
+        <div class="dash" style="transform: rotate(0deg)">
+          <div class="point"></div>
+        </div>
+        <div class="dash" style="transform: rotate(30deg)">
+          <div class="point"></div>
+        </div>
+        <div class="dash" style="transform: rotate(60deg)">
+          <div class="point"></div>
+        </div>
+        <div class="dash" style="transform: rotate(90deg)">
+          <div class="point"></div>
+        </div>
+        <div class="dash" style="transform: rotate(120deg)">
+          <div class="point"></div>
+        </div>
+        <div class="dash" style="transform: rotate(150deg)">
+          <div class="point"></div>
+        </div>
+        <div class="dash" style="transform: rotate(180deg)">
+          <div class="point"></div>
+        </div>
+        <div class="dash" style="transform: rotate(210deg)">
+          <div class="point"></div>
+        </div>
+        <div class="dash" style="transform: rotate(240deg)">
+          <div class="point"></div>
+        </div>
+        <div class="dash" style="transform: rotate(270deg)">
+          <div class="point"></div>
+        </div>
+        <div class="dash" style="transform: rotate(300deg)">
+          <div class="point"></div>
+        </div>
+        <div class="dash" style="transform: rotate(330deg)">
+          <div class="point"></div>
+        </div>
+      </div>
       <div class="pointers">
-        <div class="pointer" style="transform: rotate(0deg)"></div>
-        <div class="pointer" style="transform: rotate(30deg)"></div>
-        <div class="pointer" style="transform: rotate(60deg)"></div>
-        <div class="pointer" style="transform: rotate(90deg)"></div>
-        <div class="pointer" style="transform: rotate(120deg)"></div>
-        <div class="pointer" style="transform: rotate(150deg)"></div>
-        <div class="pointer" style="transform: rotate(180deg)"></div>
-        <div class="pointer" style="transform: rotate(210deg)"></div>
-        <div class="pointer" style="transform: rotate(240deg)"></div>
-        <div class="pointer" style="transform: rotate(270deg)"></div>
-        <div class="pointer" style="transform: rotate(300deg)"></div>
-        <div class="pointer" style="transform: rotate(330deg)"></div>
+        <div class="p hours-indicator"></div>
+        <div class="p minutes-indicator"></div>
+        <div class="p seconds-indicator"></div>
+        <div class="middle"></div>
       </div>
     </div>
-
-    <div class="digital">"--:--:--"</div>
+    <div class="digital"></div>
     <script src="script.js"></script>
   </body>
 </html>
