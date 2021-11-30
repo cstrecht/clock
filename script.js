@@ -10,7 +10,7 @@ function showTime() {
   let sec = now.getSeconds();
 
   digital.innerHTML = `${putZero(hour)}:${putZero(min)}:${putZero(sec)}`;
-  //
+
   // Manipular os degrees (no css) via js
   let secDegree = (360 / 60) * sec - 90;
   let minDegree = (360 / 60) * min - 90;
