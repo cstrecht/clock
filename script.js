@@ -1,7 +1,7 @@
 let digital = document.querySelector(".digital");
-let hours = document.querySelector(".hours-indicator");
-let minutes = document.querySelector(".minutes-indicator");
 let seconds = document.querySelector(".seconds-indicator");
+let minutes = document.querySelector(".minutes-indicator");
+let hours = document.querySelector(".hours-indicator");
 
 //funcao que apresente o tempo a cada segundo que passe -> setInterval juntamente com a funcao a passar de 1 em 1 seg
 function showTime() {

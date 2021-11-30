@@ -1,26 +1,95 @@
+* {
+}
 body {
   display: flex;
-  background: rgb(255, 255, 255);
+  background: rgb(43, 43, 43);
   background: radial-gradient(
     circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(180, 180, 180, 1) 71%
+    rgb(145, 145, 145) 0%,
+    rgb(243, 243, 243) 100%
   );
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: monospace;
 }
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   margin-top: 70px;
-  margin-bottom: 30px;
-  color: rgb(54, 54, 54);
-  text-shadow: 2px 7px 7px rgb(124, 124, 124);
+  margin-bottom: 50px;
+  color: #ffffff;
+  text-shadow: 2px 2px 20px rgb(0, 0, 0);
 }
 .digital {
   font-size: 40px;
-  color: rgb(46, 46, 46);
+  color: #ffffff;
   font-family: monospace;
+}
+/* circulo do relogio */
+.analog {
+  width: 300px;
+  height: 300px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-bottom: 50px;
+}
+/* pontos do relogio, div dentro do analog  */
+.dashes {
+  width: 100%;
+  height: 100%;
+  padding-left: 50%;
+  padding-top: 50%;
+  margin-top: -3px;
+}
+.dash {
+  width: 145px;
+  height: 5px;
+  position: absolute;
+  transform-origin: left;
+  display: flex;
+  justify-content: flex-end;
+}
+.dash .point {
+  width: 10px;
+  border-radius: 50%;
+  height: 150%;
+  background-color: #ffffff;
+}
+.pointers {
+  width: 100%;
+  height: 100%;
+  padding-left: 49%;
+  padding-top: 5%;
+  margin-top: -100%;
+}
+.p {
+  transform-origin: left; /* 'centro de massa' do elemento à esquerda*/
+  transform: rotate(0deg); /*para a posição inicial*/
+  position: absolute;
+}
+
+.seconds-indicator {
+  width: 100px;
+  height: 3px;
+  background-color: #fe645e;
+}
+.minutes-indicator {
+  width: 125px;
+  height: 5px;
+  background-color: rgb(66, 66, 66);
+}
+.hours-indicator {
+  width: 70px;
+  height: 8px;
+  background-color: rgb(107, 107, 107);
+}
+.middle {
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -5px;
+  margin-left: -5px;
 }
